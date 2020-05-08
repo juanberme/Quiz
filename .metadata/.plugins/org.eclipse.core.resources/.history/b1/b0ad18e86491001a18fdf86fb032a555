@@ -1,0 +1,58 @@
+package main;
+
+import processing.core.PApplet;
+
+public class Main extends PApplet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PApplet.main("main.Main");
+	}
+	
+	cuadrado cua;
+	/*int i;
+	int p;*/
+	
+	public void settings() {
+		size(600,400);
+	}
+	
+	public void setup() {
+		//cua = new cuadrado(i*1,p*1,20,this);
+	}
+	
+	public void draw() {
+		
+		for(cua.i = 0; cua.i < 30 ; cua.i++) {
+			for(cua.p = 0; cua.p < 20; cua.p++) {
+				cua = new cuadrado(20*cua.i,20*cua.p,20,this);
+				cua.pintar();
+			}
+		}
+		
+	}
+	
+	public void mousePressed() {
+		
+	}
+	
+	
+
+	/*public int getI() {
+		return i;
+	}
+
+	public void setI(int i) {
+		this.i = i;
+	}
+
+	public int getP() {
+		return p;
+	}
+
+	public void setP(int p) {
+		this.p = p;
+	}*/
+
+	
+}

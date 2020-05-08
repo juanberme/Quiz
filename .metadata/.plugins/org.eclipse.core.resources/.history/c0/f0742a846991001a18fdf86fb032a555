@@ -1,0 +1,27 @@
+package main;
+
+import processing.core.PApplet;
+
+public class cuadrado {
+	
+	int posX, posY, tam;
+	PApplet app;
+	
+	public cuadrado(int posX, int posY, int tam, PApplet app) {
+		
+		this.posX = posX;
+		this.posY = posY;
+		this.tam = tam;
+		this.app = app;
+		
+	}
+	
+	public void pintar(){
+		
+		app.rect(this.posX, this.posY, this.tam, this.tam);
+		
+		
+	}
+
+	
+}
